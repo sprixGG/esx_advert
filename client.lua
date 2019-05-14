@@ -29,7 +29,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterCommand('ad', function(source, args)
-	if lol == false and PlayerData.job.name == 'reporter' then
+	if wait == false and PlayerData.job.name == 'reporter' then
 		TriggerServerEvent('global:advert', args)
 		wait = true
 	elseif wait == true then
